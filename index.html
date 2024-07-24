@@ -1,36 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Start Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test GTM</title>
-      <!-- Google Tag Manager -->
-        <!--  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-TFC4D2G4');</script> -->
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TFC4D2G4');</script>
     <!-- End Google Tag Manager -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651794390"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
       gtag('config', 'AW-16651794390');
     </script>
-
-    <!-- Google tag (gtag.js) event -->
-    <script>
-      gtag('event', 'manual_event_SUBMIT_LEAD_FORM', {
-        // <event_parameters>
-      });
-    </script>
-
 
     <style>
         body {
@@ -95,7 +85,7 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFC4D2G4"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
     <div class="form-container">
         <h1>Formulario de Prueba</h1>
         <form id="testForm">
@@ -110,14 +100,12 @@
             <button type="submit">Enviar</button>
         </form>
     </div>
-    </div>
-   
-
-    <script type='javascript'>
+    
+    <script>
         document.getElementById('testForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        alert('Formulario enviado');
-        // Aquí puedes añadir más código para enviar los datos del formulario a un servidor si es necesario
+            event.preventDefault();
+            alert('Formulario enviado');
+            // Aquí puedes añadir más código para enviar los datos del formulario a un servidor si es necesario
         });
     </script>
 </body>
